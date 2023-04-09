@@ -1,0 +1,101 @@
+header{
+    background:#BBBBBB ;
+    padding: 20px 0;/* espaço interno p cima e p baixo*/
+}
+
+.caixa{
+    position: relative; /* Para botar o menu dentro da caixa /div. O width não faz essa função*/
+    width: 940px; /* largura padrão*/
+    margin: 0 auto; /* para o cabeçalho ficar centralizado nas laterais; e ele calcule sozinho*/
+}
+
+nav{
+    /* Posição estática:é quando o ponto inicial está parado no modo padrão;
+    Posição relativa:é quando o ponto está deslocado, mas o ponto inicial dele continua no modo padrão inicial; Posição absoluta:é a posição do ponto em relação a outra coisa. Ele não pertence mais ao ponto padrão inicial. essa posição pode ser em relação á pág, em relação ao cabeçalho...*/
+    position: absolute; /* posição ds elemtentos dentro tag nav*/
+    top: 110px;
+    right: 0;
+}
+nav li{
+     /* tag para estilizados todos os itens da lista de navegação*/
+    display: inline; /* itens da lista ficam em linha*/
+    margin: 0 0 0 15px; /* Espaçamento só na margem esq. Sequencia: topo. dir, baixo, esq*/
+
+
+   
+}
+
+nav a{
+    /* para que todos os links de navegação sejam estilizados*/
+    text-transform: uppercase; /* todas as letras ficam maiúsculas*/
+    color: #000000; /*0= ausência de cor = preto*/
+    font-weight: bold; /* Peso da fonte, deixando-a em negrito*/
+    font-size: 22px; /* tamanho da fonte*/
+    text-decoration: none; /* nenhuma decoração no texto,tirou o sublinhado*/
+
+}
+
+nav a:hover{
+    /* Hover: qnd o mause estar por cima do elemento. Nesse caso,quando o mouse estiver por cima do menu de navegação.*/
+    color: #c78c19;
+    text-decoration: underline;  /* Ficará sublinhado apenas qund o mause estiver por cima do item d enavegação*/
+}
+
+.produtos{
+    width: 940px; /* largura padrão*/
+    margin: 0 auto; /* para os produtos ficarem centralizado nas laterais; e ele calcule sozinho*/
+    padding: 50px 0; /* espaço interno pra cima e pra baixo (tavam grudados no cabeçalho)*/
+}
+
+.produtos li{
+    display: inline-block; /* para que os produtos oferecidos fiquem lado a lado*/
+    text-align: center; /* centralizar o texto*/
+    width: 30%; /* largura igual*/
+    vertical-align: top;  /* Para que fiquem alinhados pelo topo*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* a lagura width será fixa 30% e o espaço interno do padding 20px já estão contabilizados dentro deessa largura,a box-sizing faz com que o espaçamento lateral esteja dentro do percentual.*/
+    border: 2px solid #000000; /*Forma unificada de colocar a borda, ao invés de declarar as 03 propriedades (width, style e color)*/
+    border-radius: 10px; /*borda arredondada. */
+}
+
+.produtos li:hover{
+    /*Hover: quando queremos realçar alguma característica quando o mouse do usuário estiver por cima do elemento*/
+    border-color:#c78c19 ;
+}
+
+.produtos li:active{
+    /* active: realçar uma característica quando o mouse estiver ativo/clicando no elemento*/
+    border-color: #088c19;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url("bg.jpg"); /*url é usada para adicionarmos uma imagem de fundo*/
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
